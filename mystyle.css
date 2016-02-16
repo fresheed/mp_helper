@@ -1,0 +1,23 @@
+table[name="data"]{
+    border: 1px solid black;
+    table-layout: fixed;
+    width: 200px;
+}
+
+table[name="data"] th, table[name="data"] td {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 100px;
+}
+
+td[tg="unique"] {
+    border: 1px solid black;
+    overflow: hidden;
+    width: 100px;
+}
+
+
+input[type="text"] {
+     width: 100%; 
+     box-sizing: border-box;
+}

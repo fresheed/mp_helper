@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+    <TITLE>MP1804 codes</TITLE>
+    <SCRIPT language="javascript" src="script.js">
+    </SCRIPT>
+</HEAD>
+<BODY>
+ 
+    <TABLE name="data" id="dataTable" width="350px" border="1" >
+    	   
+    	     <tr>
+	     <th> Номер </th>
+	     <th>Адрес перехода</th>
+	     <th>Тип перехода</th> 
+	     <th>Приёмник результата</th>
+	     <th>Источник операндов</th>
+	     <th>Функция АЛУ</th> 
+	     <th>Сдвиг</th>
+	     <th>Входной перенос</th>
+	     <th>А</th>
+	     <th>B</th>
+	     <th>D</th>
+	     <th>Комментарий</th>
+<!--
+	     <th>Т8</th>
+	     <th>Т7</th>
+	     <th>Т6</th>
+	     <th>Т5</th>
+	     <th>Т4</th>
+	     <th>Т3</th>
+	     <th>Т2</th>
+	     <th>Т1</th>
+	     <th>Т0</th>
+-->
+	     </tr>
+    </TABLE>
+
+    <script> doFill("dataTable"); </script>
+    <input type="button" value="get program" onclick="getProgram();"/>    
+    <input type="button" value="load from text" onclick="loadFromText();"/>
+    <br/><br/>
+    <table><tr>
+    <td><textarea rows="20" cols="75" name="text" id="res_program"></textarea></td>
+    <td><div style="float: right;"><b>Всякое</b>
+      <br> Входы АЛУ: общее - могут получать данные Рг(А) и 0; R может также получать внешние данные D; S может получать Рг(В) и регистр Q
+      <br> Арифметический сдвиг: вправо - вводится старший разряд, влево - вводится 0
+      <br> В комментариях лучше не писать пробелы - при заполнении таблицы они удаляются
+    </div></td>
+    </tr></table>
+</BODY>
+</HTML>
